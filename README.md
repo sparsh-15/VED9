@@ -1,2 +1,58 @@
-# VED9
-VED9 E‑Commerce is a modern jewelry and fashion web application built with React and Tailwind CSS. It features product catalogs, categories, a wishlist, a cart system, and elegant UI components optimized for a premium shopping experience.
+# 💎 Jina Fashion E‑Commerce
+
+A modern **fashion and jewelry e‑commerce web app** built using **React** and **Tailwind CSS**.  
+This project showcases product listings, category navigation, wishlist, and cart functionalities with a luxurious and minimal design.
+
+---
+
+## 🚀 Features
+- ✨ Responsive UI built with **React + Tailwind**
+- 🛍️ Product cards with hover effects (wishlist, quick view, add to cart)
+- 📂 Category-based navigation (Rings, Necklaces, Bracelets, etc.)
+- ❤️ Wishlist functionality
+- 🛒 Shopping cart system
+- 🎨 Premium fonts and golden color theme
+- 📱 Mobile-friendly navigation bar
+- 🔗 WhatsApp quick contact button
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="/screenshots/home.png">
+</p>
+
+<p align="center">
+  <img src="/screenshots/gifts.png">
+</p>
+
+<p align="center">
+  <img src="/screenshots/gifts.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="/screenshots/FeaturedProducts.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="/screenshots/wishlist.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="/screenshots/cart.png" width="80%">
+</p>
+
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React, Tailwind CSS
+- **Icons:** Lucide React
+- **State Management:** React Hooks, Context API
+- **Routing:** React Router DOM
+- **Package Manager:** npm / yarn
+
+---
+
+## 📂 Project Structure
