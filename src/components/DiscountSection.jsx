@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="w-full">
           <video
             src="/jewellery.mp4" // replace with your video
-            controls
+          
             autoPlay
             loop
             muted
