@@ -1,8 +1,58 @@
-# React + Vite
+# 💎 Jina Fashion E‑Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **fashion and jewelry e‑commerce web app** built using **React** and **Tailwind CSS**.  
+This project showcases product listings, category navigation, wishlist, and cart functionalities with a luxurious and minimal design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- ✨ Responsive UI built with **React + Tailwind**
+- 🛍️ Product cards with hover effects (wishlist, quick view, add to cart)
+- 📂 Category-based navigation (Rings, Necklaces, Bracelets, etc.)
+- ❤️ Wishlist functionality
+- 🛒 Shopping cart system
+- 🎨 Premium fonts and golden color theme
+- 📱 Mobile-friendly navigation bar
+- 🔗 WhatsApp quick contact button
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="/screenshots/home.png">
+</p>
+
+<p align="center">
+  <img src="/screenshots/gifts.png">
+</p>
+
+<p align="center">
+  <img src="/screenshots/gifts.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="/screenshots/FeaturedProducts.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="/screenshots/wishlist.png" width="80%">
+</p>
+
+<p align="center">
+  <img src="/screenshots/cart.png" width="80%">
+</p>
+
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React, Tailwind CSS
+- **Icons:** Lucide React
+- **State Management:** React Hooks, Context API
+- **Routing:** React Router DOM
+- **Package Manager:** npm / yarn
+
+---
+
+## 📂 Project Structure
