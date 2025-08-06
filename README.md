@@ -22,24 +22,25 @@ This project showcases product listings, category navigation, wishlist, and cart
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="/screenshots/home.png" alt="Home Page" width="80%">
+  <img src="public/screenshots/home.png" alt="Home Page" width="80%">
 </p>
 
 <p align="center">
-  <img src="/screenshots/gifts.png" alt="Gifts Page" width="80%">
+  <img src="public/screenshots/gifts.png" alt="Gifts Page" width="80%">
 </p>
 
 <p align="center">
-  <img src="/screenshots/FeaturedProducts.png" alt="Featured Products" width="80%">
+  <img src="public/screenshots/FeaturedProducts.png" alt="Featured Products" width="80%">
 </p>
 
 <p align="center">
-  <img src="/screenshots/wishlist.png" alt="Wishlist Page" width="80%">
+  <img src="public/screenshots/wishlist.png" alt="Wishlist Page" width="80%">
 </p>
 
 <p align="center">
-  <img src="/screenshots/cart.png" alt="Cart Page" width="80%">
+  <img src="public/screenshots/cart.png" alt="Cart Page" width="80%">
 </p>
+
 
 
 ---
