@@ -1,4 +1,8 @@
 import { createContext, useContext, useReducer } from 'react'
+import { useEffect } from "react"
+import { auth } from "../firebase"
+import { onAuthStateChanged } from "firebase/auth"
+
 
 const AppContext = createContext()
 
@@ -8,6 +12,7 @@ const initialState = {
   user: null,
   isLoginModalOpen: false
 }
+
 
 function appReducer(state, action) {
   switch (action.type) {
@@ -79,6 +84,7 @@ function appReducer(state, action) {
 export function AppProvider({ children }) {
   const [state, dispatch] = useReducer(appReducer, initialState)
 
+
   const addToCart = (product) => {
     dispatch({ type: 'ADD_TO_CART', payload: product })
   }
@@ -111,9 +117,21 @@ export function AppProvider({ children }) {
     return state.cart.reduce((total, item) => total + (item.price * item.quantity), 0)
   }
 
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      dispatch({ type: "SET_USER", payload: currentUser })
+    })
+    return () => unsubscribe()
+  }, [])
+
   const getTotalItems = () => {
     return state.cart.reduce((total, item) => total + item.quantity, 0)
   }
+
+    const setUser = (user) => {
+    dispatch({ type: "SET_USER", payload: user })
+  }
+
 
   const value = {
     ...state,
@@ -124,8 +142,10 @@ export function AppProvider({ children }) {
     removeFromWishlist,
     toggleLoginModal,
     getTotalPrice,
-    getTotalItems
+    getTotalItems,
+    setUser
   }
+  
 
   return (
     <AppContext.Provider value={value}>

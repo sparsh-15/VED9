@@ -15,6 +15,9 @@ import WishlistPage from './pages/WishlistPage'
 import JewellerySection from './components/JewellerySection'
 import DiscountSection from './components/DiscountSection'
 import Footer from './components/Footer'
+import { auth } from './firebase'
+import { onAuthStateChanged } from 'firebase/auth'
+import { useEffect, useState } from 'react'
 
 function HomePage() {
   return (
@@ -31,11 +34,21 @@ function HomePage() {
 }
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser); // null if logged out, user object if logged in
+    });
+
+    return () => unsubscribe();
+  }, []);
   return (
     <AppProvider>
       <Router>
         <div className="min-h-screen bg-gray-50">
-      <Header />
+      <Header user={user} />
+
       <Navigation />
           
           <Routes>
