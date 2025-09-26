@@ -24,7 +24,7 @@ export default function LoginModal() {
           alert("Passwords do not match!")
           return
         }
-        await signup(formData.email, formData.password)
+        await signup(formData.email, formData.password, formData.name)
         alert("Registration successful!")
       }
       toggleLoginModal()
